@@ -1,0 +1,65 @@
+#slogan {
+    .layer-background {
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        > .container {
+            height: 100%;
+
+            > div {
+                height: 100%;
+
+                > .text-header {
+                    color: white;
+                    text-align: center;
+                    font-size: 3rem;
+                    font-weight: 300;
+                    padding-bottom: 2rem;
+                }
+
+                > .button-container {
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        color: white;
+                        background-color: #f41353;
+                        font-size: 1.2rem;
+                        border: none;
+                        padding: 0.5rem 2rem;
+                        text-decoration: none;
+                    }
+                    .triangle {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-top: 1.4rem solid transparent;
+                        border-bottom: 1.4rem  solid transparent;
+                        border-left: 1.4rem solid #f41353;
+                        right: -22px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .layer-background {
+            background-size: auto;
+
+            > .container > div {
+                > .text-header {
+                    color: white;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

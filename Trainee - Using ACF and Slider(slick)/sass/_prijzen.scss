@@ -1,0 +1,173 @@
+#prijzen {
+    .container {
+        padding: 5rem 0;
+        > div {
+            > .title {
+                color: white;
+                font-size: 3rem;
+                font-weight: 300;
+            }
+
+            > .sub-title {
+                color: #f41353;
+                font-style: italic;
+                padding: 0.5rem 0;
+            }
+
+            > .text-below-title {
+                color: white;
+                text-align: center;
+            }
+
+            > .table-title {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 300;
+                border-bottom: 2px solid white;
+                margin-top: 2rem;
+            }
+
+            > .price-table {
+                padding: 20px;
+
+                .full-stuk-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .stuk-container {
+                        width: 115px;
+                        height: 40px;
+                        background-color: #f41353;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        
+    
+                        > .triangle {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-left: 0.4rem solid transparent;
+                            border-right: 0.4rem solid transparent;
+                            border-top: 0.4rem solid #f41353;
+                            bottom: -6px;
+                            left: calc((115px / 2) - 0.4rem);
+                        }
+                    }
+                }
+
+                .table-data {
+                    color: white;
+                    text-align: center;
+
+                    div.length-data {
+                        color: #f41353;
+                    }
+                }
+            }
+
+            > .price-table-mobile {
+                display: none;
+
+                .table-left-side {
+                    width: 50%;
+
+                    .full-stuk-container-mobile {
+
+                        > button.stuk-container-mobile.active {
+                            background-color: #9d143b;
+
+                            &::after {
+                                border-color: transparent transparent transparent #9d143b;
+                            }
+                        }
+
+                        > button.stuk-container-mobile {
+                            transition: background-color 0.7s ease;
+                            position: relative;
+                            width: 6rem;
+                            height: 3rem;
+                            border: none;
+                            background-color: #f41353;
+                            color: white;
+                            font-size: 1rem;
+                            border-radius: 10px;
+
+                            &::after {
+                                transition: border-color 0.7s ease;
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                right: -9px;
+                                transform: translateY(-50%);
+                                border-width: 9px 0 9px 9px;
+                                border-style: solid;
+                                border-color: transparent transparent transparent #f41353;
+                            }
+                        }
+                    }
+                }
+
+                .table-right-side {
+                    width: 50%;
+
+                    > .price-container {
+
+                        > div {
+                            color: white;
+                            width: 100px;
+                            text-align: center;
+                        }
+
+                        > div.length-data {
+                            text-align: center;
+                            color: #f41353;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+            > .text-below-section {
+                padding: 2rem;
+
+                p {
+                    margin-bottom: 2rem;
+                    color: white;
+                    text-align: center;
+                }
+            } 
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .container > div {
+            > .title {
+                font-size: 2rem;
+            }
+
+            > .sub-title {
+                text-align: center;
+            }
+
+            > .table-title {
+                font-size: 1.2rem;
+            }
+
+            > .price-table {
+                display: none;
+            }
+
+            > .price-table-mobile {
+                display: block;
+            }
+
+            > .text-below-section {
+                padding: 0.5rem;
+            } 
+        }
+    }
+}

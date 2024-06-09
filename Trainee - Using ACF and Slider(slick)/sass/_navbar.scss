@@ -1,0 +1,62 @@
+.navbar {
+    background-color: black;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    div {
+        > a > img {
+            width: 10rem;
+        }
+
+        > .navbar-nav {
+            gap: 1rem;
+
+            > li {
+                padding: 1rem 0;
+            }
+
+            > li > a {
+                font-size: 1.2rem;
+                color: white;
+                transition: color 0.5s ease;
+                padding: 1.1rem;
+
+                &:hover {
+                    color: #f41353;
+                }
+            }
+
+            > li > a.active {
+                color: #f41353;
+                border-bottom: 5px solid #f41353;
+            }
+        }
+
+        button.navbar-toggler {
+            
+            > i {
+                color: white;
+                font-size: 1.8rem;
+                transition: transform 0.7s ease;
+
+                &:hover {
+                    color: #f41353;
+                    transform: scale(1.4, 1.4);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 0 0.5rem;
+
+        div > a > img {
+            width: 8rem;
+        }
+
+        div > .navbar-nav {
+            align-items: center;
+        }
+    }
+}

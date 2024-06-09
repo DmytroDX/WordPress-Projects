@@ -1,0 +1,117 @@
+#contact {
+    padding: 5rem 0;
+
+    .container {
+        width: 1000px;
+
+        .title > h1 {
+            color: white;
+            font-weight: 300;
+        }
+
+        .subtitle > h6 {
+            color: #f41353;
+            font-weight: 300;
+            line-height: 1.5rem;
+        }
+
+        > .form-container {
+            margin-top: 2.5rem;
+
+            > .form-map > .form-cf7 {
+                form.wpcf7-form {
+                    p {
+                        margin-bottom: 5px;
+                        text-align: end;
+    
+                        > .wpcf7-form-control-wrap > input, .wpcf7-form-control-wrap > textarea {
+                            border-radius: 0;
+                            width: 400px;
+                            border-style: solid;
+                            border-color: white;
+                            color: white;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            font-style: italic;
+    
+                            &::placeholder {
+                                color: white;
+                            }
+    
+                            &:focus {
+                                outline-color: #f41353;
+                                outline-width: 2px;
+                                outline-style: solid;
+                            }
+                        }
+    
+                        > .wpcf7-form-control-wrap > textarea {
+                            resize: none;
+                            height: 110px;
+                        }
+    
+                        > .submit-container {
+                            position: relative;
+                            display: inline-block;
+                            margin-right: 19px;
+
+                            > input.wpcf7-submit {
+                                border: none;
+                                background-color: #f41353;
+                                padding: 7px 20px;
+                                color: white;
+                                font-size: 14px;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                right: -18px;
+                                transform: translateY(-50%);
+                                border-width: 18px 0 17px 18px;
+                                border-style: solid;
+                                border-color: transparent transparent transparent #f41353;
+                            }
+                        } 
+                    }
+                }
+            }
+
+            > .additional-info {
+
+
+                > div.tel-email {
+                    width: 50%;
+
+                    > p {
+                        margin-bottom: 0.5rem;
+
+                        color: white;
+                        font-weight: 300;
+                        
+                        &:last-child {
+                            text-decoration: underline;
+                        }
+
+                        > i {
+                            color: #f41353;
+                            margin-right: 10px;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                > .full-address {
+                    width: 50%;
+                    padding-left: 1.5rem;
+                    
+                    > p {
+                        color: white;
+                        margin-bottom: 0.1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

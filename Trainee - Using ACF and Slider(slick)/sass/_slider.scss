@@ -1,0 +1,108 @@
+.slider.slick-slider {
+    position: relative;
+
+    .slick-scroll-down.slick-arrow {
+        position: absolute;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        bottom: 3%;
+        left: 50%;
+    }
+
+    .slick-arrow.slick-next {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        z-index: 1;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .slick-arrow.slick-prev {
+        position: absolute;
+        top: 5%;
+        right: 4%;
+        z-index: 1;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .slick-list {
+        overflow: hidden;
+
+        .slick-track {
+            display: flex;
+            height: 100vh;
+
+            .slide-item.slick-slide {
+                img {
+                    width: 100vw;
+                    filter: brightness(80%);
+                }
+
+                .container {
+                    h2 {
+                        position: absolute;
+                        bottom: 15%;
+                        z-index: 1;
+                        color: white;
+                        text-align: center;
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 12%;
+                        z-index: 1;
+                        width: 400px;
+                        color: white;
+                        filter: brightness(100%);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) { 
+        .slick-scroll-down.slick-arrow {
+            display: none;
+        }
+
+        .slick-list {
+            
+
+            .slick-track {
+                height: 200px;
+
+                .slide-item.slick-slide {
+
+                    .container {
+                        h2 {
+                            position: absolute;
+                            bottom: 15%;
+                            z-index: 1;
+                            color: white;
+                            text-align: center;
+
+                            font-size: 10px;
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 12%;
+                            z-index: 1;
+                            width: 130px;
+                            color: white;
+                            filter: brightness(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

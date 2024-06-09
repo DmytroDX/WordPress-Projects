@@ -1,0 +1,516 @@
+body {
+  overflow-x: hidden;
+}
+body::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.slider.slick-slider {
+  position: relative;
+}
+.slider.slick-slider .slick-scroll-down.slick-arrow {
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  bottom: 3%;
+  left: 50%;
+}
+.slider.slick-slider .slick-arrow.slick-next {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 1;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+.slider.slick-slider .slick-arrow.slick-prev {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  z-index: 1;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+.slider.slick-slider .slick-list {
+  overflow: hidden;
+}
+.slider.slick-slider .slick-list .slick-track {
+  display: flex;
+  height: 100vh;
+}
+.slider.slick-slider .slick-list .slick-track .slide-item.slick-slide img {
+  width: 100vw;
+  filter: brightness(80%);
+}
+.slider.slick-slider .slick-list .slick-track .slide-item.slick-slide .container h2 {
+  position: absolute;
+  bottom: 15%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.slider.slick-slider .slick-list .slick-track .slide-item.slick-slide .container img {
+  position: absolute;
+  top: 12%;
+  z-index: 1;
+  width: 400px;
+  color: white;
+  filter: brightness(100%);
+}
+@media (max-width: 575.98px) {
+  .slider.slick-slider .slick-scroll-down.slick-arrow {
+    display: none;
+  }
+  .slider.slick-slider .slick-list .slick-track {
+    height: 200px;
+  }
+  .slider.slick-slider .slick-list .slick-track .slide-item.slick-slide .container h2 {
+    position: absolute;
+    bottom: 15%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+  }
+  .slider.slick-slider .slick-list .slick-track .slide-item.slick-slide .container img {
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+    width: 130px;
+    color: white;
+    filter: brightness(100%);
+  }
+}
+
+.navbar {
+  background-color: black;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+.navbar div > a > img {
+  width: 10rem;
+}
+.navbar div > .navbar-nav {
+  gap: 1rem;
+}
+.navbar div > .navbar-nav > li {
+  padding: 1rem 0;
+}
+.navbar div > .navbar-nav > li > a {
+  font-size: 1.2rem;
+  color: white;
+  transition: color 0.5s ease;
+  padding: 1.1rem;
+}
+.navbar div > .navbar-nav > li > a:hover {
+  color: #f41353;
+}
+.navbar div > .navbar-nav > li > a.active {
+  color: #f41353;
+  border-bottom: 5px solid #f41353;
+}
+.navbar div button.navbar-toggler > i {
+  color: white;
+  font-size: 1.8rem;
+  transition: transform 0.7s ease;
+}
+.navbar div button.navbar-toggler > i:hover {
+  color: #f41353;
+  transform: scale(1.4, 1.4);
+}
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 0 0.5rem;
+  }
+  .navbar div > a > img {
+    width: 8rem;
+  }
+  .navbar div > .navbar-nav {
+    align-items: center;
+  }
+}
+
+#over .container {
+  color: white;
+  padding: 5rem 0;
+}
+#over .container > h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+#over .container > h5 {
+  color: #f41353;
+  font-style: italic;
+  padding: 2rem 0;
+}
+#over .container div {
+  padding: 1rem 0;
+}
+@media (max-width: 575.98px) {
+  #over .container {
+    padding: 2rem 0;
+  }
+  #over .container > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #over .container > h5 {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  #over .container div.welcome-text {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+  #over .container div.welcome-text > div {
+    text-align: center;
+  }
+  #over .container div.bottom-text {
+    text-align: center;
+  }
+  #over .container div.signature {
+    padding-right: 1rem;
+  }
+  #over .container div.signature > img {
+    width: 80px;
+  }
+}
+
+#slogan .layer-background {
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#slogan .layer-background > .container {
+  height: 100%;
+}
+#slogan .layer-background > .container > div {
+  height: 100%;
+}
+#slogan .layer-background > .container > div > .text-header {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+#slogan .layer-background > .container > div > .button-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slogan .layer-background > .container > div > .button-container a {
+  color: white;
+  background-color: #f41353;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+#slogan .layer-background > .container > div > .button-container .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 1.4rem solid transparent;
+  border-bottom: 1.4rem solid transparent;
+  border-left: 1.4rem solid #f41353;
+  right: -22px;
+}
+@media (max-width: 575.98px) {
+  #slogan .layer-background {
+    background-size: auto;
+  }
+  #slogan .layer-background > .container > div > .text-header {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+}
+
+#prijzen .container {
+  padding: 5rem 0;
+}
+#prijzen .container > div > .title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+}
+#prijzen .container > div > .sub-title {
+  color: #f41353;
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+#prijzen .container > div > .text-below-title {
+  color: white;
+  text-align: center;
+}
+#prijzen .container > div > .table-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-bottom: 2px solid white;
+  margin-top: 2rem;
+}
+#prijzen .container > div > .price-table {
+  padding: 20px;
+}
+#prijzen .container > div > .price-table .full-stuk-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#prijzen .container > div > .price-table .full-stuk-container .stuk-container {
+  width: 115px;
+  height: 40px;
+  background-color: #f41353;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#prijzen .container > div > .price-table .full-stuk-container .stuk-container > .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #f41353;
+  bottom: -6px;
+  left: calc(57.5px - 0.4rem);
+}
+#prijzen .container > div > .price-table .table-data {
+  color: white;
+  text-align: center;
+}
+#prijzen .container > div > .price-table .table-data div.length-data {
+  color: #f41353;
+}
+#prijzen .container > div > .price-table-mobile {
+  display: none;
+}
+#prijzen .container > div > .price-table-mobile .table-left-side {
+  width: 50%;
+}
+#prijzen .container > div > .price-table-mobile .table-left-side .full-stuk-container-mobile > button.stuk-container-mobile.active {
+  background-color: #9d143b;
+}
+#prijzen .container > div > .price-table-mobile .table-left-side .full-stuk-container-mobile > button.stuk-container-mobile.active::after {
+  border-color: transparent transparent transparent #9d143b;
+}
+#prijzen .container > div > .price-table-mobile .table-left-side .full-stuk-container-mobile > button.stuk-container-mobile {
+  transition: background-color 0.7s ease;
+  position: relative;
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  background-color: #f41353;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+#prijzen .container > div > .price-table-mobile .table-left-side .full-stuk-container-mobile > button.stuk-container-mobile::after {
+  transition: border-color 0.7s ease;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -9px;
+  transform: translateY(-50%);
+  border-width: 9px 0 9px 9px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f41353;
+}
+#prijzen .container > div > .price-table-mobile .table-right-side {
+  width: 50%;
+}
+#prijzen .container > div > .price-table-mobile .table-right-side > .price-container > div {
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+#prijzen .container > div > .price-table-mobile .table-right-side > .price-container > div.length-data {
+  text-align: center;
+  color: #f41353;
+  font-style: italic;
+}
+#prijzen .container > div > .text-below-section {
+  padding: 2rem;
+}
+#prijzen .container > div > .text-below-section p {
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  #prijzen .container > div > .title {
+    font-size: 2rem;
+  }
+  #prijzen .container > div > .sub-title {
+    text-align: center;
+  }
+  #prijzen .container > div > .table-title {
+    font-size: 1.2rem;
+  }
+  #prijzen .container > div > .price-table {
+    display: none;
+  }
+  #prijzen .container > div > .price-table-mobile {
+    display: block;
+  }
+  #prijzen .container > div > .text-below-section {
+    padding: 0.5rem;
+  }
+}
+
+#fotos .fotos-container {
+  width: 100vw;
+}
+#fotos .fotos-container .title-background {
+  height: 10rem;
+  background-color: #f41353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fotos .fotos-container .title-background > .title > h1 {
+  color: white;
+  font-weight: 300;
+}
+
+#contact {
+  padding: 5rem 0;
+}
+#contact .container {
+  width: 1000px;
+}
+#contact .container .title > h1 {
+  color: white;
+  font-weight: 300;
+}
+#contact .container .subtitle > h6 {
+  color: #f41353;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+#contact .container > .form-container {
+  margin-top: 2.5rem;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p {
+  margin-bottom: 5px;
+  text-align: end;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .wpcf7-form-control-wrap > input, #contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p .wpcf7-form-control-wrap > textarea {
+  border-radius: 0;
+  width: 400px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .wpcf7-form-control-wrap > input::placeholder, #contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p .wpcf7-form-control-wrap > textarea::placeholder {
+  color: white;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .wpcf7-form-control-wrap > input:focus, #contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p .wpcf7-form-control-wrap > textarea:focus {
+  outline-color: #f41353;
+  outline-width: 2px;
+  outline-style: solid;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .wpcf7-form-control-wrap > textarea {
+  resize: none;
+  height: 110px;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .submit-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 19px;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .submit-container > input.wpcf7-submit {
+  border: none;
+  background-color: #f41353;
+  padding: 7px 20px;
+  color: white;
+  font-size: 14px;
+}
+#contact .container > .form-container > .form-map > .form-cf7 form.wpcf7-form p > .submit-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  border-width: 18px 0 17px 18px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f41353;
+}
+#contact .container > .form-container > .additional-info > div.tel-email {
+  width: 50%;
+}
+#contact .container > .form-container > .additional-info > div.tel-email > p {
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: 300;
+}
+#contact .container > .form-container > .additional-info > div.tel-email > p:last-child {
+  text-decoration: underline;
+}
+#contact .container > .form-container > .additional-info > div.tel-email > p > i {
+  color: #f41353;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+#contact .container > .form-container > .additional-info > .full-address {
+  width: 50%;
+  padding-left: 1.5rem;
+}
+#contact .container > .form-container > .additional-info > .full-address > p {
+  color: white;
+  margin-bottom: 0.1rem;
+  font-weight: 300;
+}
+
+footer {
+  padding: 0;
+  background-color: black;
+  padding: 0.8rem 2rem;
+  padding-bottom: 0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+footer div > a > img {
+  width: 10rem;
+}
+footer div > p {
+  color: white;
+  font-size: 13px;
+}
+footer div > p > mark {
+  background-color: transparent;
+  color: #f41353;
+  border-bottom-color: #f41353;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

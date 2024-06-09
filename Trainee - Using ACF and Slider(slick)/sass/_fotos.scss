@@ -1,0 +1,18 @@
+#fotos {
+    .fotos-container {
+        width: 100vw;
+
+        .title-background {
+            height: 10rem;
+            background-color: #f41353;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > .title > h1 {
+                color: white;
+                font-weight: 300;
+            }
+        }
+    }
+}

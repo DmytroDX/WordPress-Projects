@@ -1,0 +1,30 @@
+footer {
+    padding: 0;
+    background-color: black;
+    padding: 0.8rem 2rem;
+    padding-bottom: 0.4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+
+    div {
+        > a > img {
+            width: 10rem;
+        }
+
+        > p {
+            color: white;
+            font-size: 13px;
+
+            > mark {
+                background-color: transparent;
+                color: #f41353;
+                border-bottom-color: #f41353;
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                padding: 0;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
