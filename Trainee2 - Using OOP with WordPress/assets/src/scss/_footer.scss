@@ -1,0 +1,150 @@
+
+.contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+
+    @media (max-width: $lg) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    @media (max-width: $md) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .image-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.5;
+        z-index: -1;
+    } 
+
+    h2 {
+        font-family: 'Pacifico';
+        font-size: 160px;
+        color: $secondary-2;
+        transform: translateX(138px);
+        margin-bottom: -0.2em;
+        cursor: default;
+
+        @media (max-width: $xl) {
+            font-size: 120px;
+        }
+        @media (max-width: $lg) {
+            font-size: 80px;
+            transform: translateX(60px);
+        }
+        @media (max-width: $sm) {
+            font-size: 48px;
+            transform: translateX(30px);
+        }
+    }
+
+    h3 {
+        font-family: $font-2;
+        color: black;
+        font-size: 72px;
+        cursor: default;
+        @media (max-width: $xl) {
+            font-size: 60px;
+        }
+        @media (max-width: $lg) {
+            font-size: 36px;
+        }
+        @media (max-width: $sm) {
+            font-size: 45px;
+        }
+    }
+
+    .line {
+        height: 2px;
+        background-color: $primary-2;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .contact-form {
+        .left-col {
+            p {
+                margin: 0;
+            }
+
+            input {
+                background-color: white;
+                color: black;
+                font-size: 24px;
+                padding: 10px 20px;
+                width: 100%;
+                border-radius: 5px;
+                border: 2px dashed $primary-2;
+                margin-bottom: 25px;
+            }
+        }
+
+        .right-col {
+            textarea {
+                background-color: white;
+                color: black;
+                font-size: 24px;
+                padding: 10px 20px;
+                width: 100%;
+                border-radius: 5px;
+                border: 2px dashed $primary-2;
+                margin-bottom: 25px;
+                resize: none;
+                height: 144px;
+            }
+
+            input {
+                background-color: $secondary;
+                color: white;
+                font-size: 24px;
+                padding: 10px 20px;
+                text-align: center;
+                width: 100%;
+                border-radius: 5px;
+                border: 2px dashed $primary-2;
+                margin-bottom: 25px;
+                height: 58px;
+
+                &:hover {
+                    background-color: darken($color: $secondary, $amount: 15%);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $primary;
+    padding: 30px 0px;
+
+    .icon {
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .warning-holder {
+        color: white;
+        
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        p {
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+}

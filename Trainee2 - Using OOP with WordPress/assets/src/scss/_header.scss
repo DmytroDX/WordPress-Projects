@@ -1,0 +1,303 @@
+#wrapper-navbar {
+    .top-helder-holder {
+        height: 260px;
+        background-color: transparent;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @media (max-width: $lg) {
+            height: 200px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        @media (max-width: $md) {
+            height: 45px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .container {
+            .logo-holder {
+                display: block;
+
+                .logo {
+                    img {
+                        width: 275px;
+                    }
+                }
+            }
+
+            .col-4 {
+                @media (max-width: $md) {
+                    display: none;
+                }
+            }
+
+            .col-6 {
+                @media (max-width: $lg) {
+                    text-align: center;
+                }
+                @media (max-width: $md) {
+                    text-align: start;
+                }
+            }
+
+            .col {
+                @media (max-width: $lg) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media (max-width: $md) {
+                    justify-content: end;
+                }
+            }
+
+            .reservation-holder {
+                .contact-holder {
+                    font-size: 18px;
+                    font-weight: 600;
+
+                    a {
+                        color: $primary;
+                        text-decoration: none;
+                        display: inline-block;
+                        margin-right: 1em;
+                        margin-bottom: 1em;
+
+                        @media (max-width: $lg) {
+                            margin-right: 0.5em;
+                            margin-bottom: 0.5em;
+                        }
+
+                        @media (max-width: $md) {
+                            margin-right: 0;
+                            margin-bottom: 0;
+                        }
+
+                        svg[class*=fa] {
+                            color: $secondary;
+                        }
+                    }
+
+                    @media (max-width: $lg) {
+                        font-size: 16px;
+
+                        .address {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: $md)
+                    {
+                        font-size: 18px;
+                    }
+                    
+                    .social-media-holder-tablet {
+                        font-size: 50px;
+                        display: none;
+
+                        a {
+                            color: $secondary;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: darken($color: $secondary, $amount: 15%);
+                            }
+                        }
+
+                        @media (max-width: $lg) {
+                            display: inline-block;
+                            font-size: 18px;
+                        }
+
+                        @media (max-width: $md) {
+                            display: none;
+                        }
+                    }
+                }
+
+                a.reservation-btn {
+                    color: $primary;
+                    text-decoration: none;
+                    transition: all 0.25s ease;
+                    cursor: pointer;
+                    font-family: 'Fredericka the Great';
+                    font-size: 38px;
+                    border: 1px solid $secondary;
+                    display: inline-block;
+                    padding: 0.25em 0.5em;
+                    border-radius: 0.25em;
+                    &:hover {
+                        background-color: $secondary;
+                        color: white;
+                    }
+
+                    @media (max-width: $lg) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: $md) {
+                        display: none;
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                display: none;
+                padding: 0.5em 1em;
+                border-radius: 1em;
+
+                &:hover {
+                    background-color: rgba($color: #5DA0AA, $alpha: 0.2);
+                }
+
+                .bar {
+                    > div {
+                        background-color: rgba($color: #5DA0AA, $alpha: 0.5);
+                        height: 4px;
+                        width: 50px;
+                        border-radius: 4px;
+                        margin-bottom: 4px;
+
+                        @media (max-width: $md) {
+                            width: 25px;
+                        }
+
+                        @media (max-width: $md) {
+                            padding: 0;
+                        }
+                    }
+
+                    margin-bottom: 1.5em;
+
+                    @media (max-width: $md) {
+                        margin-bottom: 0;
+                        margin-left: 0.5em;
+                    }
+                }
+
+                .menu-title {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                @media (max-width: $lg) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media (max-width: $md) {
+                    flex-direction: row-reverse;
+                    padding: 0.4em;
+                }
+            }
+
+            .social-media-holder {
+                font-size: 50px;
+
+                a {
+                    color: $secondary;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: darken($color: $secondary, $amount: 15%);
+                    }
+                }
+
+                @media (max-width: $lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    margin-bottom: -360px;
+    position: relative;
+    z-index: 1000;
+    @media (max-width: $xl) {
+        margin-bottom: -240px;
+    }
+    @media (max-width: $lg) {
+        margin-bottom: 0px;
+    }
+
+    nav.navbar {
+        border-top: 1px solid rgba($color: #5da0aa, $alpha: 0.5);
+        border-bottom: 1px solid rgba($color: #5da0aa, $alpha: 0.5);
+
+        @media (max-width: $lg) {
+            padding: 0;
+        }
+
+        ul.navbar-nav {
+            margin: auto;
+            flex: 1;
+            justify-content: space-between;
+            padding: 0;
+
+            li {
+                a.nav-link {
+                    color: $primary;
+                    font-weight: 700;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    padding: 1.5em 0.5em;
+
+                    &.current {
+                        color: $secondary;
+                    }
+
+                    &:hover {
+                        color: #5da0aa;
+                    }
+
+                    @media (max-width: $xl) {
+                        font-size: 20px;
+                        padding: 1em 0.33em;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-helder-holder {
+        display: none;
+
+        @media (max-width: $md) {
+            display: block;
+        }
+
+        .container {
+            .logo-holder {
+                .logo {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+
+            a.reservation-btn {
+                width: 100%;
+                margin-top: 0.5em;
+                color: $primary;
+                text-decoration: none;
+                transition: all 0.25s ease;
+                cursor: pointer;
+                font-family: 'Fredericka the Great';
+                font-size: 22px;
+                border: 1px solid $secondary;
+                display: inline-block;
+                padding: 0.2em;
+                border-radius: 0.25em;
+                &:hover {
+                    background-color: $secondary;
+                    color: white;
+                }
+            }
+        }
+    }
+}

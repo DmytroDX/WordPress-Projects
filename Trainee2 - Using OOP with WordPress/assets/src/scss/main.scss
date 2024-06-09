@@ -1,0 +1,9 @@
+// Import bootstrap styles
+@import "./bootstrap/scss/bootstrap";
+
+// Import theme variable
+@import "./theme-variables";
+@import "./general";
+@import "./header";
+@import "./home-page";
+@import "./footer";
